@@ -1,0 +1,52 @@
+.contact-section {
+    @include section;
+
+    &__info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-btn {
+            @include button;
+            border: 1px solid $dark-color;
+            color: $dark-color;
+            text-transform: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-icon {
+                margin-left: 0.5rem;
+            }
+
+            &:hover {
+                background-color: $dark-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &__map {
+        height: 400px;
+        width: 100%;
+        position: static;
+    }
+
+    @include for-laptop-up {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__info-container {
+            align-items: flex-start;
+            width: 50%;
+        }
+
+        &__map {
+            height: 100vh;
+            width: 50%;
+            position: absolute;
+            right: 0;
+        }
+    }
+}

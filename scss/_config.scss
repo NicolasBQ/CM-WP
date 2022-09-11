@@ -1,0 +1,57 @@
+// COLORS
+$main-color: #d47528;
+$main-light: #fbf2ea;
+$dark-color: #121212;
+$gray-color: #8b8b8b;
+$white-color: #fafafa;
+
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;600&display=swap");
+
+$display-font: "Alata", sans-serif;
+$text-font: "Montserrat", sans-serif;
+
+// RESET STYLES
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// BUTTONS
+@mixin button {
+    padding: 1em 0;
+    width: clamp(8.38rem, 20vw, 12rem);
+    border: 1px solid $dark-color;
+    background: none;
+    color: $white-color;
+    font-family: $display-font;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    transition: all 0.2s ease-in-out;
+}
+
+// SECTIONS
+@mixin section {
+    padding: 1.75rem;
+    margin-bottom: 5rem;
+
+    @include for-laptop-up {
+        height: 100vh;
+        padding: 4rem;
+    }
+}
+
+
+// Media Queries
+@mixin for-laptop-up {
+    @media screen and (min-width:64em) {
+        @content;
+    }
+}

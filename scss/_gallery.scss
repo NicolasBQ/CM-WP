@@ -1,0 +1,19 @@
+.gallery-body {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper {
+    width: 80%;
+    height: 80%;
+}
+
+.gallery-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

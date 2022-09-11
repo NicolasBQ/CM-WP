@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Clasicos Monserrate | Muebleria Profesional</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navegation">
+        <div class="navegation__logo" data-navBar-element>
+          <a href="#home" class="h3-text display-font dark-text"
+            >C<span class="accent-text">M</span></a
+          >
+        </div>
+        <!-- HOME BUTTON NAVEGATION -->
+        <ul class="navegation-links">
+          <li
+            class="navegation-links__link navegation-links__link-home navegation-links__link-active"
+            data-navBar-element
+            data-navBar-home
+          >
+            <a href="#home" data-navBar-link>
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icons"
+              >
+                <title />
+                <path
+                  d="M21.76,12.14a1,1,0,0,1-.76.36,1,1,0,0,1-.64-.23L20,12V18.5a2,2,0,0,1-2,2H15a1,1,0,0,1-1-1v-4a1,1,0,0,0-1-1H11a1,1,0,0,0-1,1v4a1,1,0,0,1-1,1H6a2,2,0,0,1-2-2V12l-.36.3a1,1,0,0,1-1.28-1.54l7.77-6.54a2.86,2.86,0,0,1,3.74,0l7.77,6.54A1,1,0,0,1,21.76,12.14Z"
+                  fill="#8B8B8B"
+                />
+              </svg>
+              <p
+                class="navegation-links__link-text body-text display-font font-400"
+              >
+                Home
+              </p>
+            </a>
+          </li>
+
+          <li
+            class="navegation-links__link navegation-links__link-about"
+            data-navBar-element
+            data-navBar-about
+          >
+            <a href="#about" data-navBar-link>
+              <p
+                class="navegation-links__link-text body-text display-font font-400"
+              >
+                Nosotros
+              </p>
+            </a>
+          </li>
+
+          <!-- SERVICES BUTTON NAVEGATION -->
+          <li
+            class="navegation-links__link"
+            data-navBar-element
+            data-navBar-services
+          >
+            <a href="#services" data-navBar-link>
+              <svg
+                enable-background="new 0 0 64 64"
+                height="64px"
+                id="Layer_1"
+                version="1.1"
+                viewBox="0 0 64 64"
+                width="64px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="icons"
+              >
+                <g>
+                  <path
+                    d="M51,29.997c-4.411,0-8,3.589-8,8v1.461c-1.771-0.633-5.197-1.461-11-1.461c-5.803,0-9.228,0.828-11,1.461v-1.461   c0-4.411-3.589-8-8-8c-2.757,0-5,2.243-5,5c0,2.025,1.208,3.838,3.079,4.617C11.639,39.849,12,40.392,12,40.997l1,4   c0,3.59,2.719,6.555,6.206,6.952c-0.821,0.392-1.393,1.224-1.393,2.194c0,1.346,1.092,2.438,2.438,2.438   c1.346,0,2.438-1.092,2.438-2.438c0-0.934-0.532-1.736-1.304-2.146h21.233c-0.772,0.409-1.304,1.211-1.304,2.146   c0,1.346,1.092,2.438,2.438,2.438c1.346,0,2.438-1.092,2.438-2.438c0-0.97-0.572-1.802-1.393-2.194   C48.281,51.552,51,48.587,51,44.997l1-4c0-0.606,0.361-1.148,0.921-1.383C54.792,38.836,56,37.022,56,34.997   C56,32.24,53.757,29.997,51,29.997z"
+                    fill="#8B8B8B"
+                  />
+                  <path
+                    d="M23.75,35.659c2.081-0.38,4.79-0.662,8.25-0.662c3.46,0,6.169,0.282,8.25,0.662c0.786-3.62,3.364-6.574,6.751-7.901V22.42   c0-8.284-6.716-15-15.001-15c-8.284,0-15,6.716-15,15v5.339C20.387,29.086,22.964,32.04,23.75,35.659z"
+                    fill="#8B8B8B"
+                  />
+                </g>
+              </svg>
+              <p
+                class="navegation-links__link-text body-text display-font font-400"
+              >
+                Servicios
+              </p>
+            </a>
+          </li>
+
+          <!-- PRODUCTS BUTTON -->
+          <li
+            class="navegation-links__links"
+            data-navBar-element
+            data-navBar-products
+          >
+            <a href="#products" data-navBar-link data-navBar-products>
+              <svg
+                viewBox="0 0 640 512"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icons"
+              >
+                <path
+                  d="M160 224v64h320v-64c0-35.3 28.7-64 64-64h32c0-53-43-96-96-96H160c-53 0-96 43-96 96h32c35.3 0 64 28.7 64 64zm416-32h-32c-17.7 0-32 14.3-32 32v96H128v-96c0-17.7-14.3-32-32-32H64c-35.3 0-64 28.7-64 64 0 23.6 13 44 32 55.1V432c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-16h384v16c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16V311.1c19-11.1 32-31.5 32-55.1 0-35.3-28.7-64-64-64z"
+                  fill="#8B8B8B"
+                />
+              </svg>
+              <p
+                class="navegation-links__link-text body-text display-font font-400"
+              >
+                Productos
+              </p>
+            </a>
+          </li>
+
+          <!-- CONTACT BUTTON NAVEGATION -->
+          <li
+            class="navegation-links__link"
+            data-navBar-element
+            data-navBar-contact
+          >
+            <a href="#contact" data-navBar-link>
+              <svg
+                height="48"
+                viewBox="0 0 48 48"
+                width="48"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icons"
+              >
+                <path
+                  d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49 2.24.74 4.65 1.14 7.14 1.14 1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2-18.78 0-34-15.22-34-34 0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"
+                  fill="#8B8B8B"
+                />
+              </svg>
+              <p
+                class="navegation-links__link-text body-text display-font font-400"
+              >
+                Contacto
+              </p>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="instagram-icon">
+          <img
+            alt="Icono de Instagram para redirigirse al Instagram de Clásicos Monserrate"
+            loading="lazy"
+            src="assets/svg/instagram-icon.svg"
+          />
+        </a>
+      </nav>
+
+      <section class="header-section" id="home" data-section-header>
+        <div class="header-section__image-container">
+          <img
+            alt=""
+            class="header-section__image-container-img"
+            loading="lazy"
+            src="assets/images/HeroBG.jpg"
+          />
+        </div>
+        <div class="header-section__content">
+          <h1 class="h1-text display-font font-400 white-text margin-bottom-16">
+            CLÁSICOS <br />
+            <span class="accent-text">MONSERRATE</span>
+          </h1>
+          <p
+            class="navegation-links__link-text regular-text body-font font-400 white-text header-section__content-text margin-bottom-24"
+          >
+            Muebles de alta calidad y comodidad para tu hogar
+          </p>
+          <button class="header-section__content-cta-products">
+            <a href="#products" data-cta-products>PRODUCTOS</a>
+          </button>
+          <button class="header-section__content-cta-contact">
+            <a href="#contact" data-cta-contact>CONTACTO</a>
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- ABOUT US SECTION -->
+      <section class="about-section" id="about" data-section-about>
+        <div class="about-section__content">
+          <h2
+            class="h2-text display-font font-400 accent-text margin-bottom-16"
+          >
+            ¿Quiénes Somos?
+          </h2>
+          <article>
+            <p class="body-text body-font font-400 dark-text margin-bottom-24">
+              Somos una empresa de más de 30 años, cuya experiencia se
+              fundamenta en la óptima calidad para la satisfacción del cliente,
+              generando un Good Will por nuestra eficiencia, teniendo como lema
+              “La mejor manera de predecir el futuro es creándolo”,
+              transformamos la industria del mueble, por nuestra innovación y
+              excelente atención al cliente, certificamos nuestra calidad en la
+              guia para el cliente en la elaboración del paso a paso<span
+                class="about-section__content-dots"
+                data-about-dots
+                >...</span
+              >
+              <span class="about-section__content-hide" data-about-hide
+                >de nuestros productos, aspiramos ser una empresa mobiliaria
+                única en todo su estado interno y estructural, a nivel Nacional
+                y a nivel mundial. Nos encontramos en el punto exacto para
+                empezar nuestra expansión y reconocimiento a nivel nacional,
+                debido a nuestra gran trayectoria en la elaboración de productos
+                mobiliarios , dedicados a la innovación y creación para la
+                comodidad del cliente, somos una línea reconocida, para la
+                seguridad satisfacción y comodidad de nuestros clientes,
+                manifestamos al público que cualquier idea es posible, para
+                otorgar un producto apto para todo el mundo, nos enfocamos en
+                ayudar a construir un hogar, cálido, cómodo y agradable,
+                comprendiendo que nuestra única competencia, está en nosotros
+                mismos, por ende, es un lugar único y exclusivo para concebir
+                que el mueble que tienes en mente esta al alcance de tus
+                manos</span
+              >
+            </p>
+          </article>
+        </div>
+
+        <figure class="about-section__image">
+          <img
+            alt="Sala con sofá, plantas, escritorio y tapete - Imagen tomada de Unsplash, del usuairo SpaceJoy"
+            loading="lazy"
+            src="assets/images/quienesSomos-Imagen.png"
+          />
+        </figure>
+
+        <button class="about-section__btn" data-showMore-button>
+          LEER MÁS...
+        </button>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section class="services-section" id="services" data-section-services>
+        <h2
+          class="h2-text display-font font-400 accent-text text-disposition margin-bottom-16"
+        >
+          Nuestros Servicios
+        </h2>
+        <p
+          class="regular-text body-font font-400 gray-text text-disposition margin-bottom-48"
+        >
+          Proveemos los mejores servicios a nuestro clientes
+        </p>
+        <div class="services-section__container">
+          <!-- SERVICES SECTION - FURNITURE SERVICE CARD -->
+          <article class="services-section__container-element margin-bottom-48">
+            <img
+              alt="Icono de un sofá"
+              class="margin-bottom-24"
+              loading="lazy"
+              src="assets/svg/servicio-mobiliario.svg"
+            />
+
+            <h3 class="h3-text body-font font-600 gray-text margin-bottom-16">
+              Mobiliario
+            </h3>
+
+            <p class="body-font body-text font-400 gray-text">
+              Diseñamos productos mobiliarios de diferentes categorias que se ajusten a tus espacios y necesidades.
+              Te asesoramos y acompañamos para que puedas tomar la mejor desición a la hora de decorar tu hogar
+            </p>
+          </article>
+
+          <!-- SERVICES SECTION - PERSONALIZED SERVICE CARD -->
+          <article class="services-section__container-element margin-bottom-48">
+            <img
+              alt="Icono de un tarro con pinturas"
+              class="margin-bottom-24"
+              loadign="lazy"
+              src="assets/svg/servicio-personalizado.svg"
+            />
+
+            <h3 class="h3-text body-font font-600 gray-text margin-bottom-16">
+              Personalizado
+            </h3>
+
+            <p class="body-text body-font font-400 gray-text">
+              Juntos desarrollaremos nuevos proyectos que te impulsen a tener el hogar de tus sueños.
+            </p>
+          </article>
+
+          <!-- SERVICES SECTION - TRANSPORT SERVICE CARD -->
+          <article class="services-section__container-element margin-bottom-48">
+            <img
+              alt="Icono de un camión"
+              class="margin-bottom-24"
+              loading="lazy"
+              src="assets/svg/servicio-transporte.svg"
+            />
+
+            <h3 class="h3-text body-font font-600 gray-text margin-bottom-16">
+              Tranporte
+            </h3>
+
+            <p class="body-text body-font font-400 gray-text">
+              Transportamos e instalamos los muebles directamente desde el almacen a tu hogar.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRODUCTS SECTION -->
+
+      <section class="products-section" id="products" data-section-products>
+        <h2
+          class="h2-text display-font font-400 accent-text text-disposition margin-bottom-16"
+        >
+          Productos
+        </h2>
+        <p
+          class="regular-text body-font font-400 gray-text text-disposition margin-bottom-48"
+        >
+          Mueblería profesional de alta calidad y a tu medida
+        </p>
+        <div class="products-section__container">
+          <a class="products-section__container-product" href="salas.html">
+            <img
+              alt=""
+              class="products-section__container-product-image"
+              data-product-room
+              data-gallery="room"
+              src="assets/images/Producto-salas.png"
+              loading="lazy"
+            />
+            <p class="h3-text display-font font-400 white-text">Salas</p>
+          </a>
+          <a class="products-section__container-product" href="comedores.html">
+            <img
+              alt=""
+              class="products-section__container-product-image"
+              data-product-dining
+              data-gallery="dining"
+              src="assets/images/Producto-comedores.png"
+              loading="lazy"
+            />
+            <p class="h3-text display-font font-400 white-text">Comedores</p>
+          </a>
+          <a class="products-section__container-product" href="sillas.html">
+            <img
+              alt=""
+              class="products-section__container-product-image"
+              data-product-chair
+              data-gallery="chair"
+              src="assets/images/Producto-sillas.png"
+              loading="lazy"
+            />
+            <p class="h3-text display-font font-400 white-text">Sillas</p>
+          </a>
+          <a
+            class="products-section__container-product"
+            href="centro.html"
+          >
+            <img
+              alt=""
+              class="products-section__container-product-image"
+              data-product-center
+              data-gallery="center"
+              src="assets/images/Producto-mesa-de-centro.png"
+              loading="lazy"
+            />
+            <p class="h3-text display-font font-400 white-text">
+              Mesas de Centro
+            </p>
+          </a>
+          <a class="products-section__container-product" href="vitrinas.html">
+            <img
+              alt=""
+              class="products-section__container-product-image"
+              data-product-showcase
+              data-gallery="showcase"
+              src="assets/images/Producto-vitrinas.png"
+              loading="lazy"
+            />
+            <p class="h3-text display-font font-400 white-text">Vitrinas</p>
+          </a>
+          <a class="products-section__container-product" href="sofas.html">
+            <img
+              alt=""
+              class="products-section__container-product-image"
+              data-product-sofa
+              data-gallery="sofa"
+              src="assets/images/Producto-sofas.png"
+              loading="lazy"
+            />
+            <p class="h3-text display-font font-400 white-text">Sofás</p>
+          </a>
+          <a class="products-section__container-product" href="sofacamas.html">
+            <img
+              alt=""
+              class="products-section__container-product-image"
+              data-product-sofabed
+              data-gallery="sofabed"
+              src="assets/images/Producto-sofa-cama.png"
+              loading="lazy"
+            />
+            <p class="h3-text display-font font-400 white-text">Sofá camas</p>
+          </a>
+          <a class="products-section__container-product" href="alcobas.html">
+            <img
+              alt=""
+              class="products-section__container-product-image"
+              data-product-bedroom
+              data-gallery="bedroom"
+              src="assets/images/Producto-alcobas.png"
+            />
+            <p class="h3-text display-font font-400 white-text">Alcobas</p>
+          </a>
+        </div>
+      </section>
+      <div class="gallery-container__overlay" data-gallery-overlay></div>
+
+      <!-- CONTACT SECTION -->
+      <section
+        class="contact-section text-disposition"
+        id="contact"
+        data-section-contact
+      >
+        <div class="contact-section__info-container">
+          <h2
+            class="h2-text display-font font-400 accent-text margin-bottom-48"
+          >
+            Contacto
+          </h2>
+          <h3 class="h3-text body-font font-600 gray-text margin-bottom-24">
+            Dirección
+          </h3>
+          <p class="regular-text body-font gray-text margin-bottom-32">
+            Dg. 76 Bis #50-15, Barrios Unidos, Bogotá
+          </p>
+          <h3 class="h3-text body-font gray-text margin-bottom-24">
+            Horarios de atención
+          </h3>
+          <p class="regular-text body-font font-400 gray-text margin-bottom-16">
+            Lunes a Viernes
+          </p>
+          <p class="regular-text body-font font-400 gray-text margin-bottom-32">
+            Sábado y Domingo:
+          </p>
+          <h3 class="h3-text body-font font-600 gray-text margin-bottom-24">
+            Télefonos
+          </h3>
+          <p class="regular-text body-font font-400 gray-text margin-bottom-32">
+            671 532 - 305 9630 257
+          </p>
+          <button class="contact-section__info-container-btn margin-bottom-32">
+            WhatsApp
+            <img
+              alt="Icono de WhatsApp"
+              class="contact-section__info-container-btn-icon"
+              loading="lazy"
+              src="assets/svg/whatsapp-icon.svg"
+            />
+          </button>
+          <div class="contact-section__map" data-map></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section text-disposition">
+      <h3 class="h3-text display-font font-400 dark-text margin-bottom-24">
+        Clásicos <span class="accent-text">Monserrate</span>
+      </h3>
+
+      <ul class="footer-section__links">
+        <li>
+          <a href="#about"
+            ><p
+              class="body-text display-font font-400 dark-text margin-bottom-32"
+            >
+              Nosotros
+            </p></a
+          >
+        </li>
+        <li>
+          <a href="#services"
+            ><p
+              class="body-text display-font font-400 dark-text margin-bottom-32"
+            >
+              Servicios
+            </p></a
+          >
+        </li>
+        <li>
+          <a href="#products"
+            ><p
+              class="body-text display-font font-400 dark-text margin-bottom-32"
+            >
+              Productos
+            </p></a
+          >
+        </li>
+        <li>
+          <a href="#contact"
+            ><p class="body-text display-font font-400 dark-text">
+              Contacto
+            </p></a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdOuuHqCzyOHdnKD0wsfD4Iu2fKcEgP0s"
+    ></script>
+  </body>
+</html>

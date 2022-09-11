@@ -1,0 +1,25 @@
+.services-section {
+    @include section;
+
+    &__container {
+        &-element {
+            padding: 2rem 1rem;
+            background-color: $main-light;
+            border-radius: 1rem;
+            box-shadow: 4px 8px 5px 0 rgba(#000000, 0.5);
+        }
+    }
+
+    @include for-laptop-up {
+        &__container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 2rem;
+
+            &-element {
+                width: 25%;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

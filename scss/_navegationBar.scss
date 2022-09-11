@@ -1,0 +1,83 @@
+.navegation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $main-light;
+    box-shadow: 0 -5px 10px 0 rgba(#000000, 0.5);
+    z-index: 10;
+
+    &__logo {
+        display: none;
+    }
+
+    &-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem 0;
+
+        &__link {
+            &-text {
+                color: $gray-color;
+            }
+
+            &-about {
+                display: none;
+            }
+
+            &-active {
+                & p {
+                    color: $main-color;
+                }
+
+                & path {
+                    fill: $main-color;
+                }
+            }
+        }
+    }
+
+    @include for-laptop-up {
+        top: 0;
+        height: 8vh;
+        box-shadow: 0 5px 10px 0 rgba(#000000, 0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.75rem;
+
+        &__logo {
+            display: block;
+        }
+
+        &-links {
+            height: 100%;
+            width: 30%;
+
+            &__link {
+                &-text {
+                    color: $dark-color;
+
+                    &:hover {
+                        color: orange;
+                    }
+                }
+
+                &-home {
+                    display: none;
+                }
+
+                &-about {
+                    display: inline-block;
+                }
+            }
+
+
+        }
+
+        svg {
+            display: none;
+        }
+    }
+}
